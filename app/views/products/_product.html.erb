@@ -1,6 +1,6 @@
 <div class="col-sm-4">
   <%= image_tag(product.image_url, class: "img-fluid product-pic") %>
-  <a href="#"><h1><%= product.name %></h1></a>
+  <h1><%= link_to product.name, product %></h1>
   <p><%= product.description %></p>
   <strong><%= product.price %> &euro;</strong>
   <br>
